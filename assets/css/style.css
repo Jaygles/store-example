@@ -5,7 +5,7 @@ html, body {
     justify-content: center;
 }
 
-nav {
+.nav-bar {
     height: 60px;
     width: 90%;
     top: 94px;
@@ -19,6 +19,17 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.scrolled {
+    top: 0px;
+    width: 100%;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .nav-icon {
@@ -27,6 +38,27 @@ nav {
     background-image: url(../images/nav-icon.png);
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+.nav-title {
+    font-family: 'Amatic SC', cursive;
+    opacity: 0;
+    font-size: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-title-scrolled {
+    margin-left: 50px;
+    font-size: 3em;
+    text-align: left;
+    opacity: 1;
+    justify-self: flex-start;
+    flex-grow: 1;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .nav-search {
@@ -43,10 +75,20 @@ nav {
     font-size: 1.1em;
     color: #56543F;
     opacity: 0.8;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.nav-scrolled {
+    width: 40%;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -56,34 +98,42 @@ main {
     display: flex;
     justify-content:center;
     background-color: #41A082;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-.cta-second-background {
+.cta-main {
     height: 600px;
-    width: 1050px;
+    width: 1100px;
     background-color: #75A596;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cta-image {
     height: 600px;
     width: 902px;
-    position: fixed;
-    background-image: url(../images/cta-image.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
+    margin: 0 100px;
 }
 
 .cta-title {
-    height: 100px;
-    width: auto;
-    padding: 15px 30px;
+    height: 64px;
+    width: 902px;
+    padding: 15px 0;
+    top: 0;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.1);
     font-family: 'Amatic SC', cursive;
     font-size: 3.4em;
     font-weight: 500;
     text-align: center;
 
+}
+
+.white-space {
+    min-height: 1000px;
+    width: 100%;
 }
