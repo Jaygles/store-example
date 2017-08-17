@@ -199,7 +199,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .product-category-half {
@@ -217,10 +217,7 @@ main {
 }
 
 .category-label-quarter {
-    width: 17%;
-    margin-top: 13%;
-    padding-top: 10px;
-    padding-bottom: 3px;
+    margin-top: -50px;
     border-bottom: 2px solid white;
     position: absolute;
     text-align: center;
