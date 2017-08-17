@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .nav-bar {
@@ -183,9 +184,18 @@ main {
     align-items: center;
 }
 
-.product-category {
+.product-category-quarter {
     height: auto;
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-category-half {
+    height: auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,14 +207,40 @@ main {
     width: 100%;
 }
 
-.category-label {
+.category-label-quarter {
+    width: 17%;
     margin-top: 13%;
     padding-top: 10px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
     position: absolute;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     color: white;
     z-index: 50;
+}
+
+.category-label-half {
+    position: absolute;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    z-index: 50;
+}
+
+#abstract-text {
+    width: 30%;
+    padding-bottom: 23%;
+    padding-right: 17%;
+    color: darkslategrey;
+}
+
+#butterfly-text {
+    width: 30%;
+    margin-top: 13%;
+    padding-right: 19%;
+    color: coral;
 }
 
 .product-sale {
@@ -246,4 +282,71 @@ main {
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     color: darkred;
+}
+
+.about {
+    max-height: 600px;
+    width: 100%;
+    background-color: #B8D8D3;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-left {
+    width: 33.333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-title {
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    color: #480000;
+}
+
+.about-right {
+    width: 66.666%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    width: 80%;
+    text-align: center;
+    line-height: 130%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3em;
+    color: #480000;
+}
+
+.big-quote {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15em;
+    color: #480000;
+}
+
+#top-quote {
+    margin-left: 70px;
+    margin-bottom: 200px;
+    color: #480000;
+}
+
+#bottom-quote {
+    margin-right: 50px;
+    padding-top: 500px;
+}
+
+footer {
+    min-height: 150px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: lightgrey;
 }
