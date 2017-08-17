@@ -94,6 +94,7 @@ html, body {
 main {
     min-height: 100vh;
     max-width: 1440px;
+    min-width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -348,7 +349,7 @@ main {
 }
 
 footer {
-    min-height: 150px;
+    min-height: 110px;
     width: 100%;
     background-color: black;
     display: flex;
