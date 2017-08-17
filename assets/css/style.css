@@ -5,6 +5,8 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #41A082;
+    z-index: -2;
 }
 
 .nav-bar {
@@ -91,13 +93,18 @@ html, body {
 
 main {
     min-height: 100vh;
-    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta {
     height: 600px;
-    width: 100%;
+    max-width: 1440px;
     position: fixed;
+    top: 0;
     display: flex;
     justify-content:center;
     background-color: #41A082;
@@ -108,7 +115,7 @@ main {
 }
 
 .shadow-wrapper {
-    height: 600px;
+    height: 100vh;
     width: 100%;
     position: fixed;
     background-color: black;
@@ -233,14 +240,14 @@ main {
 #abstract-text {
     width: 30%;
     padding-bottom: 23%;
-    padding-right: 17%;
+    padding-right: 13%;
     color: darkslategrey;
 }
 
 #butterfly-text {
     width: 30%;
     margin-top: 13%;
-    padding-right: 19%;
+    padding-right: 17%;
     color: coral;
 }
 
