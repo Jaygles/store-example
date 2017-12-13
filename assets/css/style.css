@@ -378,24 +378,29 @@ footer {
     justify-content: space-between;
 }
 
+.index-category {
+    width: 50%;
+}
+
 .index-title {
     padding-top: 35px;
     font-family: 'Poppins', sans-serif;
     color: lightgrey;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 .index-title-list {
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
     color: lightgrey;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 li {
     font-family: 'Poppins', sans-serif;
     color: lightgrey;
     cursor: pointer;
+    font-size: 0.9em;
 }
 
 .index-connect {
