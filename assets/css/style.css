@@ -346,7 +346,7 @@ main {
 }
 
 footer {
-    min-height: 700px;
+    min-height: 500px;
     max-width: 1440px;
     min-width: 1440px;
     width: 100%;
@@ -361,10 +361,10 @@ footer {
 }
 
 .index-container {
-    min-height: 500px;
+    min-height: 300px;
     max-width: 1440px;
     min-width: 1440px;
-    margin: 100px 0;
+    margin: 100px 0 50px 0;
     border-top: 2px solid #FFFCE3;
     border-bottom: 2px solid #FFFCE3;
     display: flex;
@@ -373,6 +373,9 @@ footer {
 
 .index-categories {
     width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .index-title {
@@ -392,14 +395,54 @@ footer {
 li {
     font-family: 'Poppins', sans-serif;
     color: lightgrey;
+    cursor: pointer;
 }
 
 .index-connect {
-    width: 33.33%
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.connect-icon {
+    height: 64px;
+    width: 64px;
 }
 
 .index-contact {
-    width: 33.33%
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.newsletter-title {
+    margin-top: 35px;
+}
+
+.newsletter-form {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-input {
+    width: 90%;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.newsletter-submit-btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 1440px) {
@@ -571,5 +614,56 @@ li {
     .index-container {
         min-width: 600px;
         max-width: 600px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index-categories, .index-connect, .index-contact {
+        min-height: 200px;
+        width: 80%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-title {
+        margin-left: 10px;
+        margin-right: 20px;
+        max-width: 120px;
+        font-size: 1.8em;
+    }
+    .category-row {
+        flex-direction: column;
+    }
+
+    .product-category-quarter {
+        width: 80%;
+    }
+
+    .product-sale {
+        height: 300px;
+        width: 80%;
+    }
+
+    .sale-text-wrapper {
+        height: 270px;
+        width: 450px;
+    }
+
+    .small-text {
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    .sale-banner-img {
+        height: 300px;
+    }
+
+    .product-category-half {
+        width: 80%;
+    }
+
+    #butterfly-text {
+        margin-top: 260px;
     }
 }
