@@ -215,9 +215,10 @@ main {
 
 .category-label-quarter {
     width: 200px;
-    margin-top: -50px;
     border-bottom: 2px solid white;
     position: absolute;
+    padding-bottom: 9px;
+    margin-bottom: 10px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
@@ -340,7 +341,7 @@ main {
 }
 
 #bottom-quote {
-    margin-bottom: -140px;
+    margin-bottom: -165px;
     color: #480000;
     align-self: flex-end;
 }
@@ -396,11 +397,12 @@ footer {
     font-size: 0.9em;
 }
 
-li {
+.index-title-list li {
     font-family: 'Poppins', sans-serif;
     color: lightgrey;
     cursor: pointer;
     font-size: 0.9em;
+    margin-bottom: 3px;
 }
 
 .index-connect {
@@ -445,7 +447,7 @@ li {
 }
 
 .newsletter-submit-btn {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px;
     font-size: 1rem;
 }
