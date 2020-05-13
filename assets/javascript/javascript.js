@@ -7,7 +7,7 @@ function doSomething(scrollTop) {
 let ticking = false;
 
 window.addEventListener('scroll', function(e) {
-    scrollTop = window.scrollY;
+    const scrollTop = window.scrollY;
 
     if (!ticking) {
       window.requestAnimationFrame(function() {
@@ -26,13 +26,29 @@ const navTitleEl = document.getElementsByClassName("nav-title")[0];
 function toggleClasses() {
     setTimeout(() => {
         if (window.scrollY < 525) {
-            navBarEl.classList.remove("scrolled");
-            navSearchEl.classList.remove("scrolled");
-            navTitleEl.classList.remove("scrolled");
+            if (navBarEl.classList.contains("scrolled")) {
+                navBarEl.classList.remove("scrolled");
+            }
+
+            if (navSearchEl.classList.contains("scrolled")) {
+                navSearchEl.classList.remove("scrolled");
+            }
+
+            if (navTitleEl.classList.contains("scrolled")) {
+                navTitleEl.classList.remove("scrolled");
+            }
         } else {
-            navBarEl.classList.add("scrolled");
-            navSearchEl.classList.add("scrolled");
-            navTitleEl.classList.add("scrolled");
+            if (!navBarEl.classList.contains("scrolled")) {
+                navBarEl.classList.add("scrolled");
+            }
+
+            if (!navSearchEl.classList.contains("scrolled")) {
+                navSearchEl.classList.add("scrolled");
+            }
+
+            if (!navTitleEl.classList.contains("scrolled")) {
+                navTitleEl.classList.add("scrolled");
+            }
         }
 
         toggleClasses();
