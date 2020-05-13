@@ -25,7 +25,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>West India Paperworks</title>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poppins&display=swap" rel="stylesheet" rel="preload">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -34,7 +34,8 @@
     <nav class="nav-bar">
         <div class="nav-icon"></div>
         <h2 class="nav-title">West India Paper Company</h2>
-        <input class="nav-search" placeholder="Search">
+        <label for="search" class="search-label">Search</label>
+        <input id="search" class="nav-search">
     </nav>
     <main>
         <section class="cta">
@@ -47,37 +48,37 @@
         <section class="categories">
             <div class="category-row">
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/art-supplies.jpg" />
+                    <img alt="Art Supplies" loading="lazy" class="category-img" src="assets/images/art-supplies.jpg" />
                     <p class="category-label-quarter">Art Supplies</p>
                 </div>
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/cranes.jpg" />
+                    <img alt="Paper Cranes" loading="lazy" class="category-img" src="assets/images/cranes.jpg" />
                     <p class="category-label-quarter">Cranes</p>
                 </div>
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/dragons.jpg" />
+                    <img alt="Paper Dragons" loading="lazy" class="category-img" src="assets/images/dragons.jpg" />
                     <p class="category-label-quarter">Dragons</p>
                 </div>
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/mega-swan.jpg" />
+                    <img alt="Paper Swans" loading="lazy" class="category-img" src="assets/images/mega-swan.jpg" />
                     <p class="category-label-quarter">Swans</p>
                 </div>
             </div>
             <div class="category-row">
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/music-trees.jpg" />
+                    <img alt="Paper tree made of sheet music" loading="lazy" class="category-img" src="assets/images/music-trees.jpg" />
                     <p class="category-label-quarter">Music Trees</p>
                 </div>
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/paper-maps.jpg" />
+                    <img alt="Paper Map" loading="lazy" class="category-img" src="assets/images/paper-maps.jpg" />
                     <p class="category-label-quarter">Maps</p>
                 </div>
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/pope-hats.jpg" />
+                    <img alt="Paper Hat" loading="lazy" class="category-img" src="assets/images/pope-hats.jpg" />
                     <p class="category-label-quarter">Pope Hats</p>
                 </div>
                 <div class="product-category-quarter">
-                    <img loading="lazy" class="category-img" src="assets/images/small-stars.jpg" />
+                    <img alt="Paper Stars" loading="lazy" class="category-img" src="assets/images/small-stars.jpg" />
                     <p class="category-label-quarter">Stars</p>
                 </div>
             </div>
@@ -92,11 +93,11 @@
             </div>
             <div class="category-row">
                 <div class="product-category-half">
-                    <img loading="lazy" class="category-img" src="assets/images/abstract.jpg" />
+                    <img alt="Abstractly folded paper" loading="lazy" class="category-img" src="assets/images/abstract.jpg" />
                     <p class="category-label-half" id="abstract-text">Last years abstractions 50% off</p>
                 </div>
                 <div class="product-category-half">
-                    <img loading="lazy" class="category-img" src="assets/images/butterfly.jpg" />
+                    <img alt="Paper butterflies" loading="lazy" class="category-img" src="assets/images/butterfly.jpg" />
                     <p class="category-label-half" id="butterfly-text">New line of butterflies 10% off</p>
                 </div>
             </div>
@@ -114,9 +115,6 @@
                     ante ut feugiat ornare.</p>
                 <p class="big-quote" id="bottom-quote">"</p>
             </div>
-        </section>
-        <section class="">
-
         </section>
     </main>
     <footer>
@@ -151,16 +149,17 @@
             <div class="index-connect">
                 <h5>Connect with us</h5>
                 <a href="https://www.github.com/Jaygles" target="_blank" rel="noopener noreferrer">
-                    <img loading="lazy" class="connect-icon" src="assets/images/github-icon.png" />
+                    <img alt="Github icon" loading="lazy" class="connect-icon" src="assets/images/github-icon.png" />
                 </a>
                 <a href="https://www.linkedin.com/in/the-jay-sullivan/" target="_blank" rel="noopener noreferrer">
-                    <img loading="lazy" class="connect-icon" src="assets/images/linkedin-icon.png" />
+                    <img alt="Linked Icon" loading="lazy" class="connect-icon" src="assets/images/linkedin-icon.png" />
                 </a>
             </div>
             <div class="index-contact">
                 <h5 class="newsletter-title">Sign up for our newsletter</h5>
                 <form class="newsletter-form">
-                    <input class="email-input" type="text" />
+                    <label for="email">Email</label>
+                    <input id ="email" class="email-input" type="text" />
                     <button class="newsletter-submit-btn" type="submit">Submit</button>
                 </form>
             </div>

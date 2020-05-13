@@ -65,6 +65,13 @@ html, body {
     transition: all 300ms ease-in-out;
 }
 
+.search-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #56543F;
+    margin: 0 20px;
+}
+
 .nav-search {
     width: 90%;
     height: 40px;
@@ -75,9 +82,6 @@ html, body {
     -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
     -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
     box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    color: #56543F;
     opacity: 0.8;
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
@@ -442,6 +446,7 @@ footer {
 
 .email-input {
     width: 90%;
+    margin-top: 10px;
     padding: 5px;
     font-size: 1.3rem;
 }
