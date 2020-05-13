@@ -30,24 +30,24 @@ function toggleClasses() {
         navBarEl.classList.remove('scrolled');
       }
 
-      if (navSearchEl.classList.contains('scrolled')) {
-        navSearchEl.classList.remove('scrolled');
+      if (navSearchEl.classList.contains('nav-scrolled')) {
+        navSearchEl.classList.remove('nav-scrolled');
       }
 
-      if (navTitleEl.classList.contains('scrolled')) {
-        navTitleEl.classList.remove('scrolled');
+      if (navTitleEl.classList.contains('nav-title-scrolled')) {
+        navTitleEl.classList.remove('nav-title-scrolled');
       }
     } else {
       if (!navBarEl.classList.contains('scrolled')) {
         navBarEl.classList.add('scrolled');
       }
 
-      if (!navSearchEl.classList.contains('scrolled')) {
-        navSearchEl.classList.add('scrolled');
+      if (!navSearchEl.classList.contains('nav-scrolled')) {
+        navSearchEl.classList.add('nav-scrolled');
       }
 
-      if (!navTitleEl.classList.contains('scrolled')) {
-        navTitleEl.classList.add('scrolled');
+      if (!navTitleEl.classList.contains('nav-title-scrolled')) {
+        navTitleEl.classList.add('nav-title-scrolled');
       }
     }
 
